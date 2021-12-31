@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  font-family: Poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC AC delete div"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "dot zero equal equal";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid #444;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.padButton:hover {
+  opacity: 0.5;
+}
+
+.delete {
+  grid-area: delete;
+}
+
+.dis {
+  grid-area: dis;
+  border: 1px solid #444;
+  color: #999;
+  background-color: #111;
+  padding: 0 5px;
+  text-align: right;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.current-operand {
+  font-size: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.AC {
+  grid-area: AC;
+  background-color: orangered;
+}
+.equal {
+  grid-area: equal;
+  background-color: #5599ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light {
+  opacity: 0.8;
 }
