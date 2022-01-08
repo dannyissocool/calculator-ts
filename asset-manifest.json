@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dannyissocool.github.io/calculator-ts/static/css/main.b9b1f93e.css",
+    "main.js": "/dannyissocool.github.io/calculator-ts/static/js/main.9e2f3e21.js",
+    "index.html": "/dannyissocool.github.io/calculator-ts/index.html",
+    "main.b9b1f93e.css.map": "/dannyissocool.github.io/calculator-ts/static/css/main.b9b1f93e.css.map",
+    "main.9e2f3e21.js.map": "/dannyissocool.github.io/calculator-ts/static/js/main.9e2f3e21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9b1f93e.css",
+    "static/js/main.9e2f3e21.js"
+  ]
+}
